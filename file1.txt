@@ -1,1 +1,37 @@
 helo hoadoasdcjcjasjcjacjan
+ndsfjwehfffffffffffffffffffffffffffffffffw
+sdjsdsssssssssssssssssssssssssssssssss
+sdjfiweter8tre
+
+What is a Resource?
+REST architecture treats every content as a resource. These resources can be Text Files, Html Pages, Images, Videos or Dynamic Business Data. REST Server simply provides access to resources and REST client accesses and modifies the resources. Here each resource is identified by URIs/ Global IDs. REST uses various representations to represent a resource where Text, JSON, XML. The most popular representations of resources are XML and JSON.
+
+Representation of Resources
+A resource in REST is a similar Object in Object Oriented Programming or is like an Entity in a Database. Once a resource is identified then its representation is to be decided using a standard format so that the server can send the resource in the above said format and client can understand the same format.
+
+For example, in RESTful Web Services - First Application chapter, a user is a resource which is represented using the following XML format −
+
+<user> 
+   <id>1</id> 
+   <name>Mahesh</name>
+   <profession>Teacher</profession> 
+</user> 
+The same resource can be represented in JSON format as follows −
+
+{ 
+   "id":1, 
+   "name":"Mahesh", 
+   "profession":"Teacher" 
+}
+Good Resources Representation
+REST does not impose any restriction on the format of a resource representation. A client can ask for JSON representation whereas another client may ask for XML representation of the same resource to the server and so on. It is the responsibility of the REST server to pass the client the resource in the format that the client understands.
+
+Following are some important points to be considered while designing a representation format of a resource in RESTful Web Services.
+
+Understandability − Both the Server and the Client should be able to understand and utilize the representation format of the resource.
+
+Completeness − Format should be able to represent a resource completely. For example, a resource can contain another resource. Format should be able to represent simple as well as complex structures of resources.
+
+Linkablity − A resource can have a linkage to another resource, a format should be able to handle such situations.
+
+However, at present most of the web services are representing resources using either XML or JSON format. There are plenty of libraries and tools available to understand, parse, and modify XML and JSON data.
